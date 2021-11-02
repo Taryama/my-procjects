@@ -1,5 +1,5 @@
 # Import Flask modules
-import re
+
 from flask import Flask, render_template, request
 
 # Create an object named app
