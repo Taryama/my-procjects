@@ -42,8 +42,8 @@ def admin():
 def greet_admin():
     return redirect(url_for(('greet'), name='Master Admin!!!!'))
 
-@app.route('/<name>')
-def greet(name):
+#@app.route('/<name>')
+#def greet(name):
     return render_template('greet.html', name_html=name)
 
 @app.route('/list10')
@@ -56,5 +56,5 @@ def evens():
 
 
 if __name__=="__main__":
-    # app.run(debug=True)
+    #app.run(debug=True)
     app.run(host='0.0.0.0', port=80)
